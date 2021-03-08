@@ -24,8 +24,7 @@ def fft(amplitude_values, sampling_frequency):
     amplitude_values = np.fft.fft(amplitude_values)
     frequency_values = np.fft.fftfreq(len(amplitude_values), 1 / sampling_frequency)
 
-    length = len(frequency_values) // 2
-    return amplitude_values[:length], frequency_values[:length]
+    return amplitude_values, frequency_values
 
 
 def fft_real(amplitude_values, sampling_frequency):

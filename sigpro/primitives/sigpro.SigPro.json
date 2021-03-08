@@ -1,0 +1,35 @@
+{
+    "name": "sigpro.SigPro",
+    "primitive": "sigpro.SigPro",
+    "classifiers": {
+        "type": "preprocessor",
+        "subtype": "feature_extractor"
+    },
+    "produce": {
+        "method": "process_signal",
+        "args": "get_input_args",
+        "output": "get_output_args"
+    },
+    "hyperparameters": {
+        "fixed": {
+            "keep_columns": {
+                "type": "bool or list",
+                "default": false
+            },
+            "values_column_name": {
+                "type": "str",
+                "default": "values"
+            },
+            "transformations": {
+                "type": "list"
+            },
+            "aggregations": {
+                "type": "list"
+            },
+            "input_is_dataframe": {
+                "type": "bool",
+                "default": true
+            }
+        }
+    }
+}

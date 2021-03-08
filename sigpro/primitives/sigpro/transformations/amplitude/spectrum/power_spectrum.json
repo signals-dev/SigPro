@@ -1,0 +1,30 @@
+{
+    "name": "sigpro.transformations.amplitude.spectrum.power_spectrum",
+    "primitive": "sigpro.transformations.amplitude.spectrum.power_spectrum",
+    "classifiers": {
+        "type": "transformation",
+        "subtype": "amplitude"
+    },
+    "produce": {
+        "args": [
+            {
+                "name": "amplitude_values",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "sampling_frequency",
+                "type": "float"
+            }
+        ],
+        "output": [
+            {
+                "name": "amplitude_values",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "frequency_values",
+                "type": "numpy.ndarray"
+            }
+        ]
+    }
+}
